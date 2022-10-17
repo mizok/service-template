@@ -1,0 +1,24 @@
+{
+  "name": "cors-proxy-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.dev.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizok/cors-proxy-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mizok/cors-proxy-server/issues"
+  },
+  "homepage": "https://github.com/mizok/cors-proxy-server#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "webpack": "^5.74.0"
+  }
+}
