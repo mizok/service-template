@@ -1,28 +1,36 @@
 {
-  "name": "cors-proxy-server",
+  "name": "service-template",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.dev.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx webpack --config webpack.dev.js",
-    "start": "node ./src/index.js"
+    "commitlint": "commitlint -E HUSKY_GIT_PARAMS",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mizok/cors-proxy-server.git"
+    "url": "git+https://github.com/mizok/service-template.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "vite",
+    "service",
+    "template"
+  ],
+  "author": "Mizok",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mizok/cors-proxy-server/issues"
+    "url": "https://github.com/mizok/service-template/issues"
   },
-  "homepage": "https://github.com/mizok/cors-proxy-server#readme",
+  "homepage": "https://github.com/mizok/service-template#readme",
   "devDependencies": {
-    "@babel/core": "^7.19.3",
-    "@babel/preset-env": "^7.19.4",
-    "babel-loader": "^8.2.5",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "@commitlint/cli": "^17.8.1",
+    "@commitlint/config-conventional": "^17.8.1",
+    "@types/node": "^20.8.10",
+    "husky": "^8.0.3",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "vite": "^4.5.0"
   }
 }
