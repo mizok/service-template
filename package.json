@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS",
+    "commitlint": "commitlint --edit $HUSKY_GIT_PARAMS",
     "build": "vite build"
   },
   "repository": {
@@ -26,11 +26,10 @@
   "devDependencies": {
     "@commitlint/cli": "^17.8.1",
     "@commitlint/config-conventional": "^17.8.1",
+    "@commitlint/types": "^17.8.1",
     "@types/node": "^20.8.10",
     "husky": "^8.0.3",
-    "typescript": "^5.2.2"
-  },
-  "dependencies": {
+    "typescript": "^5.2.2",
     "vite": "^4.5.0"
   }
 }
