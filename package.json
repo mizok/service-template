@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "commitlint": "commitlint --edit $HUSKY_GIT_PARAMS",
-    "build": "vite build"
+    "build": "ts-node esbuild.ts"
   },
   "repository": {
     "type": "git",
@@ -28,8 +28,9 @@
     "@commitlint/config-conventional": "^17.8.1",
     "@commitlint/types": "^17.8.1",
     "@types/node": "^20.8.10",
+    "esbuild": "^0.19.8",
     "husky": "^8.0.3",
-    "typescript": "^5.2.2",
-    "vite": "^4.5.0"
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   }
 }
